@@ -1,15 +1,14 @@
 import React from "react";
-import { useAuth0 } from "@auth0/auth0-react";
+
+import LogoutButton from "./logout"
 
 const Home = () => {
-  const { loginWithRedirect } = useAuth0();
   return (
-    <button
-      className="btn btn-primary btn-block"
-      onClick={() => loginWithRedirect()}
-    >
-      Log In
-    </button>
+    <div style={{ justifyContent: "center" }}>
+      <h1>Society Name</h1>
+      <h3>In progress</h3>
+      <LogoutButton />
+    </div>
   );
 };
 
